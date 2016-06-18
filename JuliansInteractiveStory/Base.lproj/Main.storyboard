@@ -24,7 +24,7 @@
                                 <rect key="frame" x="246" y="522" width="108" height="30"/>
                                 <state key="normal" title="Start Adventure"/>
                                 <connections>
-                                    <segue destination="cCR-Vg-2xU" kind="show" id="eXN-KP-hbI"/>
+                                    <segue destination="cCR-Vg-2xU" kind="show" identifier="startAdventure" id="eXN-KP-hbI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="1211" y="-395"/>
         </scene>
-        <!--View Controller-->
+        <!--Page Controller-->
         <scene sceneID="hnz-c6-s34">
             <objects>
-                <viewController id="cCR-Vg-2xU" sceneMemberID="viewController">
+                <viewController id="cCR-Vg-2xU" customClass="PageController" customModule="JuliansInteractiveStory" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vKa-XM-n7j"/>
                         <viewControllerLayoutGuide type="bottom" id="j8F-cB-cb3"/>
@@ -79,23 +79,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9A-uL-ck0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="324" y="-403"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Xiz-pX-Tk8">
-            <objects>
-                <viewController id="iGy-fE-U15" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="n5s-3V-nCh"/>
-                        <viewControllerLayoutGuide type="bottom" id="0gI-ex-D8X"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8gr-Wa-WL7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KWE-XI-bzN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>
