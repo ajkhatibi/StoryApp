@@ -41,6 +41,17 @@ extension Story {
         return UIImage(named: self.rawValue)!
     }
     
+    var soundEffectURL: NSURL {
+        let fileNmae: String
+        switch self {
+        case .Droid, .Home: fileNmae = "HappyEnding"
+        case . Monster: fileNmae = "Ominous"
+        default: fileNmae = "PageTurn"
+        }
+        let path = NSBundle.mainBundle().pathForResource(fileNmae, ofType: "wav")!
+        return NSURL(fileURLWithPath: path)
+    }
+    
     var text: String {
         switch self {
         case .ReturnTrip(let name):

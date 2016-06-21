@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class PageController: UIViewController {
     
     var page: Page?
+    var sound: SystemSoundID = 0
+    
     let artwork = UIImageView()
     let storyLable = UILabel()
     let firstChoiceButton = UIButton(type: .System)
@@ -98,6 +101,7 @@ class PageController: UIViewController {
         if let page = page, firstChoice = page.firstChoice {
             let nextPage = firstChoice.page
             let pageController = PageController(page: nextPage)
+            playSound(nextPage.story.soundEffectURL)
             navigationController?.pushViewController(pageController, animated: true)
         }
     }
@@ -106,12 +110,19 @@ class PageController: UIViewController {
         if let page = page, secondChoice = page.secondChoice {
             let nextPage = secondChoice.page
             let pageController = PageController(page: nextPage)
+            
+            playSound(nextPage.story.soundEffectURL)
             navigationController?.pushViewController(pageController, animated: true)
             
         }
     }
     func PlayAgain() {
         navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
+    func playSound(url: NSURL){
+        AudioServicesCreateSystemSoundID(url, &sound)
+        AudioServicesPlaySystemSound(sound)
     }
 
 }

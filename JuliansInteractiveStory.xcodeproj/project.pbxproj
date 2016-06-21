@@ -14,6 +14,7 @@
 		41236BA11D11E8450080500D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41236B9F1D11E8450080500D /* LaunchScreen.storyboard */; };
 		41236BA91D13594E0080500D /* InteractiveStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41236BA81D13594E0080500D /* InteractiveStory.swift */; };
 		41236BAB1D1481060080500D /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41236BAA1D1481060080500D /* PageController.swift */; };
+		41236BAE1D19D6700080500D /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 41236BAD1D19D6700080500D /* Sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		41236BA21D11E8450080500D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41236BA81D13594E0080500D /* InteractiveStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveStory.swift; sourceTree = "<group>"; };
 		41236BAA1D1481060080500D /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
+		41236BAD1D19D6700080500D /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sounds; path = ../../../../Downloads/Sounds; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,17 @@
 				41236B9D1D11E8450080500D /* Assets.xcassets */,
 				41236B9F1D11E8450080500D /* LaunchScreen.storyboard */,
 				41236BA21D11E8450080500D /* Info.plist */,
+				41236BAC1D19D63E0080500D /* Resources */,
 			);
 			path = JuliansInteractiveStory;
+			sourceTree = "<group>";
+		};
+		41236BAC1D19D63E0080500D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41236BAD1D19D6700080500D /* Sounds */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +142,7 @@
 			files = (
 				41236BA11D11E8450080500D /* LaunchScreen.storyboard in Resources */,
 				41236B9E1D11E8450080500D /* Assets.xcassets in Resources */,
+				41236BAE1D19D6700080500D /* Sounds in Resources */,
 				41236B9C1D11E8450080500D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
